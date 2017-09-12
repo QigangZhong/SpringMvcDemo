@@ -1,5 +1,6 @@
 package com.qigang.controller;
 
+import com.qigang.domain.ResponseData;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -15,5 +16,17 @@ public class IndexController {
         mv.addObject("age",30);
         mv.setViewName("index");
         return mv;
+    }
+
+    @RequestMapping(value="/token")
+    @ResponseBody
+    public ResponseData token(String token){
+        ResponseData data=new ResponseData();
+        data.setCode("0");
+        data.setMsg("success");
+        data.setData("");
+        System.out.println(token);
+        //如果需要返回restful风格json数据, pom.xml中需要添加jackson的2个包,并且打@ResponseBody
+        return data;
     }
 }

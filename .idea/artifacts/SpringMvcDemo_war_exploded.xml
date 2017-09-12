@@ -18,15 +18,15 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-expression:3.2.4.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-web:3.2.4.RELEASE" />
           <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
+          <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.11" />
+          <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.11" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.5.5" />
         </element>
       </element>
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/target/SpringMvcDemo/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="SpringMvcDemo/web/Web" />
-      <element id="directory" name="output">
-        <element id="dir-copy" path="D:/software/apache-tomcat-7.0.70/webapps" />
-      </element>
     </root>
   </artifact>
 </component>
